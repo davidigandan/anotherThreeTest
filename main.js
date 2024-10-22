@@ -34,7 +34,7 @@ const topEndCubeGeometry = new THREE.BoxGeometry(Math.sqrt(50), Math.sqrt(50), M
 const topEndCubeMaterial = new THREE.MeshBasicMaterial( { color: 0xFF0000 } );
 const topEndCube = new THREE.Mesh( topEndCubeGeometry, topEndCubeMaterial);
 topEndCube.position.set(2.5,15,0); //position on top right of cylinder
-topEndCube.rotation.z = (2*Math.PI)-(Math.PI/4); //rotate cube -45 degrees
+topEndCube.rotation.z = (2*Math.PI)-(Math.PI/4); //rotate cube -45 degrees. 
 topEndCube.updateMatrix(); //store the rotation
 scene.add(topEndCube);
 
@@ -49,7 +49,7 @@ topEndMesh.position.set(10,5,0);
 
 const axesHelper = new THREE.AxesHelper( 50 ); 
 
-scene.add( axesHelper, cylinder );
+scene.add(axesHelper, cylinder);
 
 
 function animate() {
